@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Alien Typing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startScreen">
+        <h1>Alien Typing Game</h1>
+        <button id="playBtn">Play</button>
+    </div>
+    <div id="gameContainer" style="display:none;">
+        <div id="info">
+            <span>Punkte: <span id="score">0</span></span>
+            <span style="margin-left:30px;">Level: <span id="level">1</span></span>
+            <span style="margin-left:30px;">Leben: <span id="lives">10</span></span>
+        </div>
+        <div id="gameArea"></div>
+        <div id="controls">
+            <button id="pauseBtn">Pause</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

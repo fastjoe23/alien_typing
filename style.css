@@ -1,0 +1,105 @@
+body {
+    background: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#startScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+#startScreen h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+#playBtn {
+    font-size: 1.5em;
+    padding: 20px 40px;
+    border-radius: 12px;
+    background: #2e8b57;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#playBtn:hover {
+    background: #1e4b3b;
+}
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#info {
+    margin: 10px;
+    font-size: 1.3em;
+}
+#gameArea {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    margin: 0 auto;
+    background: #222;
+    border: 2px solid #555;
+    overflow: hidden;
+    flex: 1;
+}
+.alien-text {
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    margin-top: 2px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.alien {
+    position: absolute;
+    /* entferne ggf. height/width, wenn sie kleiner als das Bild sind */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+#controls {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background: #111;
+}
+#pauseBtn {
+    font-size: 1.2em;
+    padding: 12px 28px;
+    border-radius: 8px;
+    background: #d2691e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#pauseBtn:hover {
+    background: #8b4513;
+}
+@media (max-width: 800px) {
+    #gameArea {
+        height: 60vh;
+    }
+    .alien {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;
+    }
+}
